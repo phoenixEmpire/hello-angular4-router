@@ -1,0 +1,11 @@
+<h1>Angular Router</h1>
+<nav>
+    <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+    <a routerLink="/superheroes" routerLinkActive="active">Heroes</a>
+    <a routerLink="/admin" routerLinkActive="active">Admin</a>
+    <a [routerLink]="[{outlets:{popup:['compose']}}]">Contact</a>
+</nav>
+<!-- The router only supports one primary unnamed outlet per template. -->
+<router-outlet></router-outlet>
+<!-- A template can also have any number of named outlets.  -->
+<router-outlet name="popup"></router-outlet>
