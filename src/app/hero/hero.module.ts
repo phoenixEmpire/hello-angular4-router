@@ -19,7 +19,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     HeroRoutingModule
   ],
-  // 组件只在路由中使用，不用导出。组件在模版中使用，必须导出。
+  // 组件在路由中使用，不用导出。组件在模版中使用，必须导出。
   exports: [
     HeroListComponent,
     HeroDetailComponent
